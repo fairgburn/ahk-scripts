@@ -15,6 +15,7 @@ Rctrl +
         [ *PrtSc ] Snipping Tool (rect mode)
         [ Win ] Windows command prompt
         [ C ] Calculator
+        [ F ] File Explorer
         [ G ] Git Bash
         [ M ] Task Manager
         [ N ] OneNote
@@ -46,7 +47,7 @@ Return
 
 ;; reload the main script
 >^r::
-    MsgBox Reloading AutoHotkey
+    MsgBox Reloading %A_ScriptName%
     Reload
 Return
 
