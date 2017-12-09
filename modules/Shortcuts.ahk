@@ -11,7 +11,7 @@
 
 
 ;; VS Code
->^/::
++>^/::
     Run "C:\Program Files\Microsoft VS Code\Code.exe"
 Return
 
@@ -26,48 +26,48 @@ Return
 Return
 
 ; Windows command line
->^LWin::
->^RWin::
++>^LWin::
++>^RWin::
     Run cmd.exe /k cd %USERPROFILE%
 Return
 
 ;; calculator
->^c::
++>^c::
     Run calc
 Return
 
 ;; file explorer
->^f::
++>^f::
     Run explorer
 Return
 
 ;; git bash
->^g::
++>^g::
     Run "C:\Program Files\Git\git-bash.exe" --cd-to-home
 Return
 
 ;; task manager
->^m::
++>^m::
     Run taskmgr
 Return
 
 ;; OneNote
->^n::
++>^n::
     Run .\shortcuts\OneNote
 Return
 
 ;; Visual Studio
->^v::
++>^v::
     Run "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe"
 Return
 
 ;; terminal (cygwin)
->^t::
++>^t::
     Run "C:\cygwin64\bin\mintty.exe" -
 Return
 
 ;; web browser (firefox)
->^w::
++>^w::
     Run "C:\Program Files\Mozilla Firefox\firefox.exe"
 Return
 

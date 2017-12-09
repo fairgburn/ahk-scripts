@@ -3,35 +3,39 @@
 
 ;;------------------------------------------------------------------------------------------------------------------------
 ;; show help
++>^h::
+    ListHotkeys
+Return
+
 >^h::
 
 helpmsg =
 (
 
-Shortcuts:      (* - Rctrl optional)
+SHORTCUTS      (* - prefix optional)
+prefix = Rctrl + Shift
 ----------------------------------------------
-Rctrl +
-        [ / ] VS Code
-        [ *PrtSc ] Snipping Tool (rect mode)
-        [ Win ] Windows command prompt
-        [ C ] Calculator
-        [ F ] File Explorer
-        [ G ] Git Bash
-        [ M ] Task Manager
-        [ N ] OneNote
-        [ T ] Cygwin terminal
-        [ V ] Visual Studio
-        [ W ] Web browser (Firefox)
+    [ / ] VS Code
+    [ *PrtSc ] Snipping Tool (rect mode)
+    [ Win ] Windows command prompt
+    [ C ] Calculator
+    [ F ] File Explorer
+    [ G ] Git Bash
+    [ M ] Task Manager
+    [ N ] OneNote
+    [ T ] Cygwin terminal
+    [ V ] Visual Studio
+    [ W ] Web browser (Firefox)
 
 
-Commands
+COMMANDS
+prefix = Rctrl
 ----------------------------------------------
-Rctrl +
-        [ H ] Show help
-        [ Q ] Quit active program (send Alt-F4)
-        [ R ] Reload toolbox.ahk
-        [ Up ] Raise volume
-        [ Down ] Lower volume
+    [ H ] Show help
+    [ Q ] Quit active program (send Alt-F4)
+    [ R ] Reload toolbox.ahk
+    [ Up ] Raise volume
+    [ Down ] Lower volume
 
 )
 
