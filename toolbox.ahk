@@ -2,14 +2,17 @@
 
 SendMode Input ; makes send faster
 
-;; alt-s: snipping tool in rectangle mode
-!s::
-    Run, %windir%\system32\SnippingTool.exe     ; open snipping tool
-    WinActivate, Snipping Tool                  ; move focus to the window...
-    WinWaitActive, Snipping Tool                ; ...and pause until it has focus
-    Send, !m                                    ; send alt+m (choose snip mode)
-    Send, r                                     ; send r (rectangular)
+;; load other scripts
+#Include scripts/WindowDrag.ahk
+#Include scripts/Shortcuts.ahk
+#Include scripts/Commands.ahk
+
+
+>^>!::
+    Run http://google.com
 Return
+
+
 ;;------------------------------------------------------------------------------------------------------------------------
 
 
@@ -30,3 +33,6 @@ Return
 #space::
 Send ------------------------------------------------------------------------------------------------------------------------
 Return
+;;------------------------------------------------------------------------------------------------------------------------
+
+
