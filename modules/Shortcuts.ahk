@@ -10,24 +10,6 @@
 ;; show shortcuts
 
 
-
->^h::
-    shortcuts =
-(
-/`tVS Code
-c`tcalc.exe
-PrtSc`tSnipping Tool (rect mode)
-g`tGit Bash
-m`tTask Manager
-n`tOneNote
-t`tCygwin Terminal
-v`tVisual Studio
-w`tweb browser (Firefox)
-)
-
-    MsgBox % shortcuts
-Return
-
 ;; VS Code
 >^/::
     Run "C:\Program Files\Microsoft VS Code\Code.exe"
@@ -60,12 +42,18 @@ Return
 
 ;; Snipping Tool
 ;; alt-s: snipping tool in rectangle mode
-PrintScreen::
+*PrintScreen::
     Run %windir%\system32\SnippingTool.exe     ; open snipping tool
     WinActivate Snipping Tool                  ; move focus to the window...
     WinWaitActive Snipping Tool                ; ...and pause until it has focus
     Send !m                                    ; send alt+m (choose snip mode)
     Send r                                     ; send r (rectangular)
+Return
+
+; Windows command line
+>^LWin::
+>^RWin::
+    Run cmd.exe /k cd %USERPROFILE%
 Return
 
 ;; terminal (cygwin)

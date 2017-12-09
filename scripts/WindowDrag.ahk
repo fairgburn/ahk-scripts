@@ -40,12 +40,12 @@ If (A_AhkVersion < "1.0.39.00")
 ; This is the setting that runs smoothest on my
 ; system. Depending on your video card and cpu
 ; power, you may want to raise or lower this value.
-SetWinDelay,2
+SetWinDelay, 0
 
 CoordMode,Mouse
 return
 
-!LButton::
+#LButton::
 If DoubleAlt
 {
     MouseGetPos,,,KDE_id
@@ -77,7 +77,7 @@ Loop
 }
 return
 
-!RButton::
+#RButton::
 If DoubleAlt
 {
     MouseGetPos,,,KDE_id
@@ -131,7 +131,7 @@ return
 ; "Alt + MButton" may be simpler, but I
 ; like an extra measure of security for
 ; an operation like this.
-!MButton::
+#MButton::
 If DoubleAlt
 {
     MouseGetPos,,,KDE_id
