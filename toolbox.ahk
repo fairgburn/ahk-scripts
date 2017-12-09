@@ -9,7 +9,7 @@ SendMode Input ; makes send faster
 
 
 
-
+;; testing stuff
 >^x::
     ;MouseGetPos, [ OutputVarX, OutputVarY, OutputVarWin, OutputVarControl, 1|2|3]
     MouseGetPos X, Y
