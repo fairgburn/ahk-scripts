@@ -17,6 +17,7 @@ prefix = Rctrl + Shift
 ----------------------------------------------
     [ / ] VS Code
     [ *PrtSc ] Snipping Tool (rect mode)
+    [ Tab ] Open TeamViewer to work laptop
     [ Win ] Windows command prompt
     [ C ] Calculator
     [ F ] File Explorer

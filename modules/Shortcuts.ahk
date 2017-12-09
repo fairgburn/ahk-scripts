@@ -33,7 +33,7 @@ Return
 
 ;; Open work laptop in TeamViewer with Rctrl + Tab
 ;; Working with TeamViewer version 13.0.5640 (other versions not tested)
->^Tab::
++>^Tab::
 
     computer_name = BFAIRBURN3
 
