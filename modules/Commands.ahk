@@ -2,11 +2,12 @@
 
 
 ;;------------------------------------------------------------------------------------------------------------------------
-;; show help
+;; list all active hotkeys
 +>^h::
     ListHotkeys
 Return
 
+;; show help message
 >^h::
 
 helpmsg =
