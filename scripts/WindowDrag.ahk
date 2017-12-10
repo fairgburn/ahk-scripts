@@ -45,7 +45,7 @@ SetWinDelay, 0
 CoordMode,Mouse
 return
 
-#LButton::
+!LButton::
 If DoubleAlt
 {
     MouseGetPos,,,KDE_id
@@ -77,7 +77,7 @@ Loop
 }
 return
 
-#RButton::
+!RButton::
 If DoubleAlt
 {
     MouseGetPos,,,KDE_id
@@ -131,7 +131,7 @@ return
 ; "Alt + MButton" may be simpler, but I
 ; like an extra measure of security for
 ; an operation like this.
-#MButton::
+!MButton::
 If DoubleAlt
 {
     MouseGetPos,,,KDE_id

@@ -2,12 +2,13 @@
 ; 
 
 ;; report that the script is loaded
-
 MsgBox %A_ScriptName% is ready
 
+;; makes send faster
+SendMode Input 
 
-
-SendMode Input ; makes send faster
+;; set capslock to always off (it's a special shortcut to switch desktops)
+SetCapsLockState AlwaysOff
 
 ;; load other scripts
 #Include scripts\WindowDrag.ahk
@@ -30,9 +31,5 @@ SendMode Input ; makes send faster
 ;;------------------------------------------------------------------------------------------------------------------------
 
 
-;; send 120 dashes (I use this to end sections in code)
->^Space::
-    Send {- 120} 
-Return
-;------------------------------------------------------------------------------------------------------------------------
 
+;------------------------------------------------------------------------------------------------------------------------

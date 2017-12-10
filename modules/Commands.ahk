@@ -57,6 +57,20 @@ Return
     Reload
 Return
 
+;; send 120 dashes (I use this to end sections in code)
+>^Space::
+    Send {- 120} 
+Return
+
+;; toggle desktop (Dexpot)
+CapsLock::
+    Send !^{Right}
+Return
+
+;; show open windows
+>^Tab::
+    Send #{Tab}
+Return
 
 ;;------------------------------------------------------------------------------------------------------------------------
 

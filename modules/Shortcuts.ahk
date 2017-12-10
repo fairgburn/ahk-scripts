@@ -9,11 +9,6 @@
 ;; so `!>^x` would be a hotkey for alt + Rctrl + x
 
 
-;; VS Code
-+>^/::
-    Run "C:\Program Files\Microsoft VS Code\Code.exe"
-Return
-
 ;; Snipping Tool
 ;; alt-s: snipping tool in rectangle mode
 *PrintScreen::
@@ -32,7 +27,7 @@ Return
 
 ;; Open work laptop in TeamViewer with Rctrl + Tab
 ;; Working with TeamViewer version 13.0.5640 (other versions not tested)
-+>^Tab::
+!>^Tab::
 
     computer_name = BFAIRBURN3
 
@@ -73,43 +68,48 @@ Return
     
 Return
 
+;; VS Code
+!>^/::
+    Run "C:\Program Files\Microsoft VS Code\Code.exe"
+Return
+
 ;; calculator
-+>^c::
+!>^c::
     Run calc
 Return
 
 ;; file explorer
-+>^f::
+!>^f::
     Run explorer
 Return
 
 ;; git bash
-+>^g::
+!>^g::
     Run "C:\Program Files\Git\git-bash.exe" --cd-to-home
 Return
 
 ;; task manager
-+>^m::
+!>^m::
     Run taskmgr
 Return
 
 ;; OneNote
-+>^n::
+!>^n::
     Run .\shortcuts\OneNote
 Return
 
 ;; Visual Studio
-+>^v::
+!>^v::
     Run "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe"
 Return
 
 ;; terminal (cygwin)
-+>^t::
+!>^t::
     Run "C:\cygwin64\bin\mintty.exe" -
 Return
 
 ;; web browser (firefox)
-+>^w::
+!>^w::
     Run "C:\Program Files\Mozilla Firefox\firefox.exe"
 Return
 
