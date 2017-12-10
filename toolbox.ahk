@@ -12,6 +12,7 @@ SetCapsLockState AlwaysOff
 
 ;; load other scripts
 #Include scripts\WindowDrag.ahk
+#Include scripts\TeamViewerToWork.ahk
 #Include modules\Shortcuts.ahk
 #Include modules\Commands.ahk
 

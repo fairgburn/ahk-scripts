@@ -2,12 +2,14 @@
 
 
 ;;------------------------------------------------------------------------------------------------------------------------
-;; list all active hotkeys
-+>^h::
+;; help stuff
+
+; list all active hotkeys
+!>^h::
     ListHotkeys
 Return
 
-;; show help message
+; show help message
 >^h::
 
 helpmsg =
@@ -38,6 +40,7 @@ prefix = Rctrl
     [ R ] Reload toolbox.ahk
     [ Up ] Raise volume
     [ Down ] Lower volume
+    [ e|s|d|f ] arrow keys
 
 )
 
@@ -46,50 +49,69 @@ Return
 ;;------------------------------------------------------------------------------------------------------------------------
 
 
-;; close the window
+; close the window
 >^q::
     Send !{F4}
 Return
 
-;; reload the main script
+; reload the main script
 >^r::
     MsgBox Reloading %A_ScriptName%
     Reload
 Return
 
-;; send 120 dashes (I use this to end sections in code)
+; send 120 dashes (I use this to end sections in code)
 >^Space::
     Send {- 120} 
 Return
 
-;; toggle desktop (Dexpot)
+; toggle desktop (Dexpot)
 CapsLock::
     Send !^{Right}
 Return
 
-;; show open windows
+; show open windows
 >^Tab::
     Send #{Tab}
 Return
 
-;;------------------------------------------------------------------------------------------------------------------------
 
+;;------------------------------------------------------------------------------------------------------------------------
+;; ESDF for arrow keys
+
+>^e::
+    Send {Up}
+Return
+
+>^s::
+    Send {Left}
+Return
+
+>^d::
+    Send {Down}
+Return
+
+>^f::
+    Send {Right}
+Return
+
+;;------------------------------------------------------------------------------------------------------------------------
 ;; sound
 
-;; raise volume
+; raise volume
 >^Up::Volume_Up
 ; Return
 
-;; lower volume
+; lower volume
 >^Down::Volume_Down
 Return
 
-;; shrink window horizontal
+; shrink window horizontal
 >^Right::
     
 Return
-;; shrink window vertical
+; shrink window vertical
 
-;; expand horizontal
+; expand horizontal
 
-;; expand vertical
+; expand vertical
