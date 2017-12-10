@@ -1,13 +1,12 @@
-;; shortcuts will usually be right ctrl + something that I thought makes sense
-; special keys:
-;   ctrl    = ^     (>^ means right ctrl, <^ means left)
+;; shortcuts will usually be alt + Rctrl + <key>
+;; special keys:
+;   ctrl    = ^
 ;   alt     = !
 ;   shift   = +
 ;   win     = #
-
-
-
-;; show shortcuts
+;
+;; < means left, > means right
+;; so `!>^x` would be a hotkey for alt + Rctrl + x
 
 
 ;; VS Code

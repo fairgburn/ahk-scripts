@@ -64,8 +64,18 @@ Return
 
 ;; raise volume
 >^Up::Volume_Up
-Return
+; Return
 
 ;; lower volume
 >^Down::Volume_Down
 Return
+
+;; shrink window horizontal
+>^Right::
+    
+Return
+;; shrink window vertical
+
+;; expand horizontal
+
+;; expand vertical

@@ -1,4 +1,11 @@
 ﻿;; random useful AutoHotKey stuff
+; 
+
+;; report that the script is loaded
+
+MsgBox %A_ScriptName% is ready
+
+
 
 SendMode Input ; makes send faster
 
@@ -7,15 +14,8 @@ SendMode Input ; makes send faster
 #Include modules\Shortcuts.ahk
 #Include modules\Commands.ahk
 
+#Include scripts\Intercept.ahk
 
-
-;; testing stuff
->^x::
-    ;MouseGetPos, [ OutputVarX, OutputVarY, OutputVarWin, OutputVarControl, 1|2|3]
-    MouseGetPos X, Y
-    ;MouseClick, WhichButton [, X, Y, ClickCount, Speed, D|U, R]
-    MouseClick, Left, X, Y
-Return
 
 
 ;;------------------------------------------------------------------------------------------------------------------------
@@ -32,7 +32,7 @@ Return
 
 ;; send 120 dashes (I use this to end sections in code)
 >^Space::
-    Send ------------------------------------------------------------------------------------------------------------------------
+    Send {- 120}
 Return
 ;;------------------------------------------------------------------------------------------------------------------------
 
