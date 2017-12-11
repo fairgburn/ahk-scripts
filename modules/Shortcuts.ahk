@@ -56,13 +56,23 @@ Return
 Return
 
 ;; Visual Studio
+;; (try/catch so this will work at home or at work)
 !>^v::
-    Run "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe"
+    vs_free = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\devenv.exe
+    vs_pro = C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\devenv.exe
+
+    Try {
+        Run %vs_pro%
+    }
+    
+    Catch {
+        Run %vs_free%
+    }
 Return
 
-;; terminal (cygwin)
+;; terminal
 !>^t::
-    Run "C:\cygwin64\bin\mintty.exe" -
+    Run "C:\Windows\System32\bash.exe" ~
 Return
 
 ;; web browser (firefox)
