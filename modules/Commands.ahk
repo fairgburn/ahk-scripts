@@ -36,7 +36,7 @@ COMMANDS
 prefix = Rctrl
 ----------------------------------------------
     [ H ] Show help
-    [ Q ] Quit active program (send Alt-F4)
+    [ Q ] Close active window (send Alt-F4)
     [ R ] Reload toolbox.ahk
     [ Up ] Raise volume
     [ Down ] Lower volume
