@@ -2,13 +2,14 @@
 ; 
 
 ;; report that the script is loaded
-MsgBox %A_ScriptName% is ready
+TrayTip, AutoBox.ahk, Ready,, 17
 
 ;; makes send faster
 SendMode Input 
 
-;; set capslock to always off (it's a special shortcut to switch desktops)
+;; CapsLock/NumLock constant states, they're used for shortcuts
 SetCapsLockState AlwaysOff
+SetNumLockState AlwaysOn
 
 ;; load other scripts
 #Include scripts\WindowDrag.ahk

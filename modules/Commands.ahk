@@ -16,18 +16,18 @@ helpmsg =
 (
 
 SHORTCUTS      (* - prefix optional)
-prefix = Rctrl + Shift
+prefix = Rctrl + Alt
 ----------------------------------------------
-    [ / ] VS Code
-    [ *PrtSc ] Snipping Tool (rect mode)
+    * [ NumLock ] Calculator
+    * [ PrtSc ] Snipping Tool (rect mode)
+    [ \ ] Ubuntu bash (Rctrl only) 
     [ Tab ] Open TeamViewer to work laptop
     [ Win ] Windows command prompt
-    [ C ] Calculator
+    [ C ] VS Code
     [ F ] File Explorer
     [ G ] Git Bash
     [ M ] Task Manager
     [ N ] OneNote
-    [ T ] Cygwin terminal
     [ V ] Visual Studio
     [ W ] Web browser (Firefox)
 
@@ -35,12 +35,13 @@ prefix = Rctrl + Shift
 COMMANDS
 prefix = Rctrl
 ----------------------------------------------
+    [ CapsLock ] toggle AlwaysOnTop for active window
     [ H ] Show help
     [ Q ] Close active window (send Alt-F4)
     [ R ] Reload toolbox.ahk
     [ Up ] Raise volume
     [ Down ] Lower volume
-    [ e|s|d|f ] arrow keys
+    [ w|a|s|d ] arrow keys
 
 )
 
@@ -57,7 +58,6 @@ Return
 
 ; reload the main script
 >^r::
-    MsgBox Reloading %A_ScriptName%
     Reload
 Return
 
@@ -66,9 +66,14 @@ Return
     Send {- 120} 
 Return
 
-; toggle desktop (Dexpot)
+; toggle AlwaysOnTop for active window
+; toggle active window always on top
 CapsLock::
-    Send !^{Right}
+    WinGetActiveTitle, title
+    msg := "Toggled AlwaysOnTop for:`n`n" . title
+    TrayTip, AutoBox, %msg%,, 17
+    WinSet, AlwaysOnTop, Toggle, %title%
+    
 Return
 
 ; show open windows
@@ -80,19 +85,19 @@ Return
 ;;------------------------------------------------------------------------------------------------------------------------
 ;; ESDF for arrow keys
 
->^e::
+>^w::
     Send {Up}
 Return
 
->^s::
+>^a::
     Send {Left}
 Return
 
->^d::
+>^s::
     Send {Down}
 Return
 
->^f::
+>^d::
     Send {Right}
 Return
 

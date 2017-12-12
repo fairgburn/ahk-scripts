@@ -42,7 +42,7 @@ In_Intercept()
 
 ;; hotkey to enable/cancle intmode
 >^/::
-    toggle()
+    toggle() 
 Return
 
 
@@ -58,8 +58,6 @@ Space::
     else {
         msgbox intmode is false
     }
-
-    off()
 Return
 
 c::

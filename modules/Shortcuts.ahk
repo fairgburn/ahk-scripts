@@ -19,21 +19,22 @@
     Send r                                     ; send r (rectangular)
 Return
 
+;; calculator
+*NumLock::
+    Run calc
+Return
+
 ; Windows command line
-+>^LWin::
-+>^RWin::
+!>^LWin::
+!>^RWin::
     Run cmd.exe /k cd %USERPROFILE%
 Return
 
 ;; VS Code
-!>^/::
+!>^c::
     Run "C:\Program Files\Microsoft VS Code\Code.exe"
 Return
 
-;; calculator
-!>^c::
-    Run calc
-Return
 
 ;; file explorer
 !>^f::
@@ -71,7 +72,7 @@ Return
 Return
 
 ;; terminal
-!>^t::
+^\::
     Run "C:\Windows\System32\bash.exe" ~
 Return
 
