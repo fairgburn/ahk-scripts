@@ -42,6 +42,8 @@ prefix = Rctrl
     [ Up ] Raise volume
     [ Down ] Lower volume
     [ w|a|s|d ] arrow keys
+    [ . ] jump to end of line (period -> end)
+    [ , ] jump to beginning of line (comma -> home)
 
 )
 
@@ -110,14 +112,15 @@ Return
 
 ; lower volume
 >^Down::Volume_Down
+
+;;------------------------------------------------------------------------------------------------------------------------
+
+; period -> end
+>^.::
+    Send {End}
 Return
 
-; shrink window horizontal
->^Right::
-    
+; comma -> home
+>^,::
+    Send {Home}
 Return
-; shrink window vertical
-
-; expand horizontal
-
-; expand vertical

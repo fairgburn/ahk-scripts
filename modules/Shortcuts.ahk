@@ -11,7 +11,7 @@
 
 ;; Snipping Tool
 ;; alt-s: snipping tool in rectangle mode
-*PrintScreen::
+PrintScreen::
     Run %windir%\system32\SnippingTool.exe     ; open snipping tool
     WinActivate Snipping Tool                  ; move focus to the window...
     WinWaitActive Snipping Tool                ; ...and pause until it has focus
@@ -20,7 +20,7 @@
 Return
 
 ;; calculator
-*NumLock::
+NumLock::
     Run calc
 Return
 
@@ -38,7 +38,7 @@ Return
 
 ;; file explorer
 !>^f::
-    Run explorer
+    Run explorer.exe %USERPROFILE%\workspace
 Return
 
 ;; git bash
